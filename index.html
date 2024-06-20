@@ -1,50 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Hotel Page</title>
-    <link rel="stylesheet" href="styles.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pensjonat pod Sosnami</title>
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <!-- swiper js cdn link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- custom css link -->
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Pensjonat pod Sosnami</h1>
-    </header>
 
-    <section class="features">
-        <h2>Udogodnienia</h2>
-        <ul>
-            <li>Comfortable Rooms</li>
-            <li>Free Wi-Fi</li>
-            <li>24/7 Room Service</li>
-            <li>Swimming Pool</li>
-            <li>Fitness Center</li>
-        </ul>
-    </section>
+  <!-- header -->
 
-    <section class="booking-form">
-        <h2>Rezerwacja</h2>
-        <form id="bookingForm">
-            <label for="name">Imię:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="checkin">Data zameldowania:</label>
-            <input type="date" id="checkin" name="checkin" required>
-            
-            <label for="checkout">Data wymeldowania:</label>
-            <input type="date" id="checkout" name="checkout" required>
-            
-            <label for="rooms">Ilość pokoi:</label>
-            <input type="number" id="rooms" name="rooms" min="1" max="10" required>
-            
-            <button type="submit">Rezerwuj</button>
-        </form>
-        <p id="bookingMessage"></p>
-    </section>
+  <header class="header">
 
-    <script src="script.js"></script>
-</body>
-</html>
+     <a href="#" class="logo"> <i class="fa-solid fa-tree"></i>Pensjonat pod Sosnami</a>
+
+     <nav class="navbar">
+        <a href="#home">Strona Główna</a>
+        <a href="#about">O nas</a>
+        <a href="#room">Pokoje  i nasze atrakcje</a>
+        <a href="#gallery">Zdjęcia i Film</a>
+        <a href="#offer">Oferta</a>
+        <a href="#contact">Kontakt</a>
+     </nav>
+
+     <div id="menu-btn" class="fas fa-bars"></div>
+
+  </header>
+
+  <!-- end -->
+
+   <!-- home -->
+
+   <section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+       <div class="swiper-wrapper">
+
+          <div class="swiper-slide slide" style="background: url(gallery/background_1.jpg) no-repeat;">
+             <div class="content">
+                <h3>Twój dom z dala od domu, wśród pięknych sosnowych lasów</h3>
+                <a href="#about" class="btn">wiecej o nas</a>
+             </div>
+          </div>
+
+          <div class="swiper-slide slide" style="background: url(gallery/background_2.jpg) no-repeat;">
+             <div class="content">
+                <h3>Komfort i natura – Pensjonat pod Sosnami czeka na Ciebie</h3>
+                <a href="#offer" class="btn">Sprawdź nasze oferty</a>
+             </div>
+          </div>
+
+       </div>
+
+       <div class="swiper-button-next"></div>
+       <div class="swiper-button-prev"></div>
+
+    </div>
+
+ </section>
+  <!-- end -->
+  <!-- about -->
+
+  <section class="about" id="about">
+
+    <div class="row">
+
+       <div class="image">
+          <img src="gallery/background_3.jpg" alt="">
+       </div>
+
+       <div class="content">
+          <h3>O nas</h3>
+          <p>Jesteśmy obiektem położonym wśród wzgórz i lasów Roztocza ok. 32 km na południowy- wchód od Zamościa. Z dala od ruchliwych dróg, zgiełku i hałasu. Oddalony o ok 12 km od Krasnobrodu i 9 km o Józefowa. Ostoja ciszy, wyjątkowych widoków oraz towarzystwa zwierząt i ptaków. Idealne miejsca na relaks i aktywny wypoczynek.
+          Poznaj „PENSJONAT pod SOSNAMI” prowadzony przez ludzi „stąd” </p>
+          
+       </div>
+
+    </div>
+
+ </section>
+
+ <!-- end -->
+
+<!-- room -->
+
+<section class="room" id="room">
+
+  <h1 class="heading">Pokoje i Nasze atrakcje</h1>
+
+  <div class="swiper room-slider">
+
+     <div class="swiper-wrapper">
+
+               
+        <div class="swiper-slide slide">
+           <div class="image">
+            <!--<span class="price"><big>180 PLN/doba</big></span>-->
+              <img src="gallery/room_1.jpg" alt="">
+              
+           </div>
+           <div class="content">
+              <h3>Pokój jednoosobowy</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nisi.</p>
+             <!-- <div class="stars">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>-->
+              </div>
+          </div>
+           <div class="swiper-slide slide">
+             <div class="image">
+               <!--<span class="price"><big>220 PLN/doba</big></span>-->
+                <img src="gallery/room_2.jpg" alt="">    
+              
+           </div>
+           <div class="content">
+              <h3>Pokój dwuosobowy</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nisi.</p>
+              <!--<div class="stars">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half-alt"></i>-->
+              </div> 
+          </div>
+        
+          <div class="swiper-slide slide">
+            <div class="image">
+              <!--<span class="price"><big>180 PLN/doba</big></span>-->
+               <img src="gallery/hall.jpg" alt="">
+               
+            </div>
+            <div class="content">
+               <h3>Sala Bankietowa</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nisi.</p>
+              <!-- <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>-->
+           </div>
+          </div>
+           <div class="swiper-slide slide">
+            <div class="image">
+               <!--<span class="price"><big>220 PLN/doba</big></span>-->
+               <img src="assets/background.jpg" alt="">
+               
+            </div>
+            <div class="content">
+               <h3>Basen</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nisi.</p>
+              <!-- <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>-->
+            </div>
+          </div>
+     </div>
+
+     <div class="swiper-pagination"></div>
+
+  </div>
+
+</section>
+
+<!-- end -->
+<!-- gallery -->
+
+<section class="gallery" id="gallery">
+
+  <h1 class="heading">Galeria Zdjęć</h1>
+
+  <div class="swiper gallery-slider">
+
+     <div class="swiper-wrapper">
+
+        <div class="swiper-slide slide">
+           <img src="gallery/room_1_1.jpg" alt="">
+           
+        </div>
+
+        <div class="swiper-slide slide">
+           <img src="gallery/room_1_2.jpg" alt="">
+           
+        </div>
+
+        <div class="swiper-slide slide">
+           <img src="gallery/bathroom.jpg" alt="">
+           
+        </div>
+
+        <div class="swiper-slide slide">
+           <img src="gallery/room_2_1.jpg" alt="">
+           
+        </div>
+
+        <div class="swiper-slide slide">
+           <img src="gallery/room_2_2.jpg" alt="">
+           
+        </div>
+        
+        <div class="swiper-slide slide">
+           <img src="gallery/recaption.jpg" alt="">
+           
+        </div>
+        <div class="swiper-slide slide">
+           <img src="gallery/recaption_2.jpg" alt="">
+           
+        </div>
+        <div class="swiper-slide slide">
+           <img src="gallery/recaption_3.jpg" alt="">
+           
+        </div>
+        <div class="swiper-slide slide">
+           <img src="gallery/recaption_4.jpg" alt="">
+           
+        </div>
+        <div class="swiper-slide slide">
+           <img src="gallery/stairs.jpg" alt="">
+           
+        </div>
+        <div class="swiper-slide slide">
+           <img src="gallery/stairs_1.jpg" alt="">
+           
+        </div>
+        <div class="swiper-slide slide">
+           <img src="gallery/stairs_2.jpg" alt="">
+           
+        </div>
+        <div class="swiper-slide slide">
+           <img src="gallery/garden.jpg" alt="">
+           
+        </div>
+        <div class="swiper-slide slide">
+           <img src="gallery/garden_1.jpg" alt="">
+           
+        </div>
+        <div class="swiper-slide slide">
+         <img src="gallery/goats.jpg" alt="">
+         
+      </div>
+       
+      </div>
+       
+      </div>
+     <div class="swiper-pagination"></div>
+   </div>
+  
+</section>
+
+<!-- end -->
+<!--Offer-->
+<section class="offer-section" id="offer">
+  <h1 class="heading">Oferta</h1>
+  <div class="swiper offer-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide offer">
+        <div class="image">
+          <img src="gallery/room_2.jpg" alt="Offer 1">
+        </div>
+        <div class="content">
+          <h3>Wynajem pokoi</h3>
+          <p>22 pokoje dwuosobowe; 2 - jednoosobowe z łazienkami, suszarką i telewizorem (wybrane).
+            Do dyspozycji Gości:
+            - bezpłatny parking na zamkniętym terenie pensjonatu
+            - wiata lub namiot na spotkania przy grillu/ognisku lub inne
+            - wypożyczalnia rowerów
+            - sala treningowa/siłownia
+            - 2 baseny zewnętrzne (sezonowe)
+            - parasole i meble ogrodowe ( stół + ława) 
+           </p>
+            <p class="price">
+            Cena wynajmu pokoju jednoosobowego wynosi 180zł/dobę natomiast dwuosobowego 220zł/dobę.
+            </p>
+        </div>
+      </div>
+      <div class="swiper-slide offer">
+        <div class="image">
+          <img src="gallery/room_1.jpg" alt="Offer 2">
+        </div>
+        <div class="content">
+          <h3>Oferta Biznesowa</h3>
+          <p>Organizujesz konferencję lub szkolenie? Pensjonat pod Sosnami to doskonałe miejsce do pracy w spokoju i ciszy. Proponujemy wynajem sal konferencyjnych, zakwaterowanie w komfortowych pokojach, pełne wyżywienie oraz dostęp do sprzętu multimedialnego. Dodatkowo oferujemy przerwy kawowe oraz wieczorne integracje przy ognisku.</p>
+          <p class="price">
+            Wiecej informacji odnośnie kosztów dowiesz się dzwoniąc do nas pod numer: +48 888 299 174
+            </p>
+        </div>
+      </div>
+      <div class="swiper-slide offer">
+        <div class="image">
+          <img src="gallery/garden_3.jpg" alt="Offer 3">
+        </div>
+        <div class="content">
+          <h3>Odpoczynek z przyrodą</h3>
+          <p>Teren Pensjonatu obejmuje obszar ok. 8 ha, na którym znajdują się mi.in:
+            - miejsca na namioty (pełna natura, blisko zagajnika leśnego)- zaplecze socjalne ( prysznic, toaleta) na terenie Pensjonatu
+            - miejsca na ognisko
+            - zróżnicowany teren do wędrówek pieszych, jazdy rowerowej, zbierania owoców leśnych, ziół i grzybów
+            - park linowy* ( wkrótce)
+            - zagroda ze zwierzętami ( owce, kozy )
+            - kuźnia-karczma** ( w trakcie renowacji)</p>
+            <p class="price">
+               Informację na temat kosztów i wiele więcej otrzymasz pod numer telefonu: +48 888 299 174
+            </p>
+        </div>
+      </div>
+      
+      <div class="swiper-slide offer">
+        <div class="image">
+          <img src="gallery/catering.jpg" alt="Offer 5">
+        </div>
+        <div class="content">
+          <h3>Catering</h3>
+          <p>Zapraszamy do skorzystania z naszej wyjątkowej oferty cateringu okolicznościowego, który uczyni każde wydarzenie niezapomnianym przeżyciem. Pensjonat pod Sosnami oferuje kompleksową obsługę cateringową na różne okazje – od kameralnych przyjęć rodzinnych po większe uroczystości, takie jak wesela, chrzciny, rocznice, spotkania firmowe i wiele innych.</p>
+          <p class="price">
+            Wiecej informacji zadzwoń pod numer: +48 888 299 174
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+<!-- end -->
+<!-- footer -->
+
+<section id="contact" class="contact">
+
+  <div class="box-container">
+
+     <div class="box">
+        <h3>contact info</h3>
+        <a href="#"> <i class="fas fa-phone"></i> +48 888 299 174 </a>
+        <a href="#"> <i class="fas fa-envelope"></i> maria.romanczuk49@wp.pl</a>
+        <a target="_blank" href="https://www.google.pl/maps/place/Górniki+106A,+23-460+Górniki/@50.5166047,23.0882415,15.5z/data=!4m6!3m5!1s0x472350f725b5784f:0x722fe04cdd7d4cbc!8m2!3d50.5160239!4d23.097406!16s%2Fg%2F11cs8vzs2x?entry=ttu"> <i class="fas fa-map"></i> Górniki 106A  23-460 Józefów</a>
+        
+     </div>
+
+     <div class="box">
+        <h3>Odnośniki</h3>
+        <a href="#home"> <i class="fas fa-arrow-right"></i> Strona Główna</a>
+        <a href="#about"> <i class="fas fa-arrow-right"></i> O nas</a>
+        <a href="#room"> <i class="fas fa-arrow-right"></i> Pokoje i nasze atrakcje</a>
+        <a href="#gallery"> <i class="fas fa-arrow-right"></i> Zdjęcia i Filmy</a>
+        <a href="#offer"> <i class="fas fa-arrow-right"></i> Oferta</a>
+     </div>
+
+     <div class="box map-box">
+      <h1>Nasza Lokalizacja</h1>
+      <a href="https://www.google.pl/maps/place/Górniki+106A,+23-460+Górniki/@50.5166047,23.0882415,15.5z/data=!4m6!3m5!1s0x472350f725b5784f:0x722fe04cdd7d4cbc!8m2!3d50.5160239!4d23.097406!16s%2Fg%2F11cs8vzs2x?entry=ttu" target="_blank">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10147.776875468158!2d23.0882415!3d50.5166047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472350f725b5784f%3A0x722fe04cdd7d4cbc!2sG%C3%B3rniki%20106A%2C%2023-460%20G%C3%B3rniki!5e0!3m2!1spl!2spl!4v1718896414374!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="share">
+     <a target="_blank" href="https://www.facebook.com/profile.php?id=61560420209837" class="fab fa-facebook-f"></a>
+     
+  </div>
+
+  <div class="credit">&copy; copyright @ 2024 by <span>Mateusz Kawka</span></div>
+
+</section>
+
+<!-- end -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>  
